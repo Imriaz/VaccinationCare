@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+
+	width: 100%;
+	height: 100vh;
+	background: white; 
+	}
+
+.Menu
+{
+	background: rgb(122 150 212);
+	text-align: center;
+}
+
+
+
+.Menu ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.Menu ul li
+{
+	width: 130px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Menu ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active,.Menu ul li:hover
+{
+   background: #234363;
+   border-radius: 50px;
+}
+.Menu .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+
+}
+.Menu ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: rgb(82, 126, 173);
+	margin-top: 15px;
+	margin-left: -15px;
+	z-index: 2;
+}
+.Menu ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+
+}
+.Menu ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+.Menu ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+	
+}
+.Menu ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: #b2ff00;
+	
+}
+
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+}
+.bar{
+
+	width: 50px;
+	height: 10px;
+	border:2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.bar:hover{
+	background: #fff;
+}
+
+input[name="r"]{
+
+	position: absolute;
+	visibility: hidden;
+}
+
+
+
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+
+}
+.navigation-auto div{
+	border:2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	transform: 2s;
+
+}
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+
+}
+#r1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+}
+#r2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+}
+#r3:checked ~ .navigation-auto .auto-btn{
+	background: #40D3DC;
+}
+
+
+
+
+ 
+
+

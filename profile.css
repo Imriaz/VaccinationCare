@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400|Lato:400,300|Coda|Open+Sans);
+
+/* 
+* Art by @jofpin 
+* 2014
+*/
+body{
+  background-color: #ededed;
+}
+.card {
+  width: 30%;
+  margin-top: 40px;
+  margin-bottom: 30px
+}
+.card-body .image{
+  
+}
+.card-body .image .avatar{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0px auto 0px;
+  object-fit: cover;
+  border: 10px solid #ededed;
+
+}
+.card-body .image img{
+
+  left: 50%;
+
+  transform: translate(-50%);
+
+  border-radius: 50%;
+
+}
+.card-name h2{
+  text-align: center;
+}
+.card-body .button{
+background-color: #ededed;
+}
